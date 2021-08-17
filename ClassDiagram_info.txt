@@ -1,0 +1,40 @@
+AccessVO
+-isEligible: boolean  
+-accessToken :String 
+-expireTime : String
+-emailId :String
+-uniqueId :String 
+-fistName :String 
+-lastName :String
+-mobileNumber : String 
+-userType: String (internal)
+
+BaseVO
+
+-isEligible: boolean  
+-accessToken :String 
+-expireTime : String
+-emailId :String
+-uniqueId :String 
+-fistName :String 
+-lastName :String
+-mobileNumber : String 
+-userType: String (internal)
+
+
+<<Interface>>
+LiveChatService
++CheckLiveChatEnabled() :boolean
++getOperationHours() : boolean
++ getAccesstoken() :String 
+
+
+LiveChatAPI
+
++CheckLiveChatEnabled() :boolean
++getOperationHours() : boolean
++ getAccesstoken() :String 
+
+
+DataBaseOperationAPI(interface ) + 
+
